@@ -1,10 +1,23 @@
 :root {
   --primary-color: black;
   --secondary-color: white;
+  background-color: lightblue;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .chessboard {
-  /* background-color: black; */
   height: 500px;
   width: 500px;
   background: conic-gradient(
@@ -15,4 +28,5 @@
       var(--primary-color) 0.75turn
     )
     top left / 25% 25% repeat;
+  border: 2px solid;
 }
