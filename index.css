@@ -1,9 +1,18 @@
 :root {
   --primary-color: black;
+  --secondary-color: white;
 }
 
 .chessboard {
-  background-color: black;
+  /* background-color: black; */
   height: 500px;
   width: 500px;
+  background: conic-gradient(
+      var(--primary-color) 0.25turn,
+      white 0.25turn 0.5turn,
+      var(--primary-color) 0.5turn,
+      0.75turn,
+      white 0.75turn
+    )
+    top left / 25% 25% repeat;
 }
